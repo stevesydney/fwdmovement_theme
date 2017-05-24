@@ -1,5 +1,5 @@
 <header role="banner">
-    <a href="<?= esc_url(home_url('/')); ?>" title="Home">
+    <a class="brand" href="<?= esc_url(home_url('/')); ?>" title="Home">
         <?php bloginfo('name'); ?>
     </a>
     <nav>

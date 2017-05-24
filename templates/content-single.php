@@ -4,6 +4,8 @@
             <h1 class="large"><?php the_title(); ?></h1>
             <?php get_template_part('templates/entry-meta'); ?>
         </header>
-        <?php the_content(); ?>
+        <div class="read">
+            <?php the_content(); ?>
+        </div>
     </article>
 <?php endwhile; ?>

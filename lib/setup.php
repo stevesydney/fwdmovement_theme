@@ -132,3 +132,11 @@ function remove_recent_comments_style() {
     remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
 }
 add_action('widgets_init', __NAMESPACE__ . '\\remove_recent_comments_style');
+/**
+ * Remove <p> from wrapping images
+ */
+function filter_ptags_on_images($content){
+   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+
+add_filter('the_content', __NAMESPACE__ . '\\filter_ptags_on_images');

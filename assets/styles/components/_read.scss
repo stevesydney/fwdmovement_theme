@@ -1,0 +1,163 @@
+.read {
+
+}
+
+    .read > :last-child {
+        margin-bottom: 0;
+    }
+
+.read h1,
+.read h2,
+.read h3,
+.read p,
+.read li,
+.read hr,
+.read dd,
+.read blockquote {
+    margin-bottom: $size-x1;
+}
+
+.read li :last-child,
+.read dd :last-child,
+.read blockquote :last-child {
+    margin-bottom: 0;
+}
+
+.read h1 {
+    font-size: $size-x2-em;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.read h2 {
+    font-size: $size-x1-em;
+    font-weight: bold;
+}
+
+.read h3 {
+    font-size: $size-x0-em;
+    font-weight: bold;
+}
+
+.read h1 + h1,
+.read h2 + h1,
+.read h3 + h1,
+.read h1 + h2,
+.read h2 + h2,
+.read h3 + h2,
+.read h1 + h3,
+.read h2 + h3,
+.read h3 + h3 {
+    margin-top: -$size-x1;
+}
+
+.read dl {
+    margin-left: $size-x2-em;
+}
+
+    .read dd dl {
+        margin-left: $size-x1-em;
+        padding-top: $size-x1;
+    }
+
+.read dt {
+    font-weight: bold;
+}
+
+.read ul,
+.read ol {
+    margin-left: $size-x2-em;
+}
+
+.read ol {
+    counter-reset: page-ol;
+}
+
+    .read ul ol {
+        counter-reset: page-ul-ol;
+    }
+
+    .read ol > li > ol {
+        margin-left: 0;
+    }
+
+    .read ul > li > ul,
+    .read ul > li > ol,
+    .read ol > li > ul,
+    .read ol > li > ol > li > ol {
+        margin-left: $size-x1-em;
+    }
+
+    .read li ol,
+    .read li ul {
+        padding-top: $size-x1;
+    }
+
+.read li {
+    font-size: inherit;
+    position: relative;
+}
+
+    .read li:before {
+        font-size: inherit;
+        position: absolute;
+        right: 100%;
+        padding-right: $size-small-em;
+        text-align: right;
+        font-weight: bold;
+        color: $colour-base-subtle;
+    }
+
+    .read ul > li:before {
+        content: '\2022';
+    }
+
+    .read ul > li > ul > li:before {
+        content: '\203A';
+        width: $size-x1-em;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .read ol > li:before {
+        content: counters(page-ol,'\00b7');
+        counter-increment: page-ol;
+        font-weight: normal;
+    }
+
+    .read ul ol > li:before {
+        content: counters(page-ul-ol,'\00b7');
+        counter-increment: page-ul-ol;
+    }
+
+    .read ol > li > ol > li:before {
+        position: static;
+        display: block;
+        text-align: left;
+        font-size: $size-x0;
+    }
+
+.read blockquote {
+    font-weight: bold;
+    margin-left: $size-x2-em;
+    margin-right: $size-x2-em;
+}
+
+    .read blockquote footer {
+        font-weight: normal;
+        font-size: $size-x0-em;
+    }
+
+    .read blockquote footer:before {
+        content: '- ';
+    }
+
+    .read blockquote p + footer {
+        margin-top: -$size-x1;
+    }
+
+.read img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}

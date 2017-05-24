@@ -5,6 +5,8 @@
 @import "common/variables";
 @import "common/reset";
 @import "common/global";
+
+@import "components/read";
 // @import "components/buttons";
 // // @import "components/comments";
 // // @import "components/forms";
@@ -17,7 +19,16 @@
 // @import "layouts/posts";
 // @import "layouts/tinymce";
 
-.brand {
+.contain {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+a.brand,
+a.brand:link,
+a.brand:visited,
+a.brand:hover,
+a.brand:active {
     color: $colour-primary;
 }
 

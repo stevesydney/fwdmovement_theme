@@ -1,0 +1,189 @@
+* {
+    box-sizing: inherit;
+}
+
+:focus,
+:active {
+    outline-offset: - $border-width;
+    z-index: 2;
+}
+:focus {
+    outline: $focus-ring;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    //color: $colour-base;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    //text-decoration: underline;
+    outline: none;
+}
+
+caption,
+th,
+td {
+    text-align: inherit;
+}
+
+html,
+body,
+th,
+td {
+    padding: 0;
+}
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+dl,
+dd,
+blockquote,
+hr,
+input,
+button,
+select,
+textarea {
+    margin: 0;
+}
+tt,
+code,
+kbd,
+samp,
+pre {
+    font-family: code;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+hr {
+    height: $border-width;
+    border-width: $border-width 0 0 0;
+    border-style: solid;
+    border-color: $colour-base;
+    align-self: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+label {
+    display: inline-block;
+}
+
+small {
+    font-size: $size-x0;
+}
+
+mark,
+::selection {
+    background-color: $colour-base;
+    color: $colour-base-inverse;
+}
+
+del {
+    text-decoration: line-through;
+    color: $colour-base-subtle;
+}
+
+ins {
+    text-decoration: inherit;
+    background-color: $colour-base-subtle;
+}
+
+strong {
+    font-weight: bold;
+}
+
+input,
+button,
+select,
+textarea {
+    display: block;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+[type="radio"],
+[type="checkbox"],
+select {
+    align-self: center;
+}
+
+[type="date"],
+[type="email"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="url"],
+[type="text"],
+textarea {
+    background-color: $colour-bg;
+}
+
+[type="date"],
+[type="email"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="text"],
+[type="tel"],
+[type="url"],
+[type="button"],
+[type="submit"],
+[type="reset"],
+button,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-width: 0;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 $border-width $colour-base;
+    padding: 0;
+}
+
+[type="button"],
+[type="submit"],
+[type="reset"],
+button {
+    background-color: $colour-base;
+    color: $colour-base-inverse;
+    cursor: pointer;
+}
+
+[type="button"]:active,
+[type="submit"]:active,
+[type="reset"]:active,
+button:active {
+    outline: $active-ring;
+}

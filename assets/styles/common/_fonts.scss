@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'SoinSansPro';
+    font-weight: bold;
+    font-style: italic;
+    font-display: fallback;
+    src: url('../fonts/SoinSansProBoldItalic.woff2') format('woff2'),
+         url('../fonts/SoinSansProBoldItalic.woff') format('woff');
+}
+ 
+@font-face {
+    font-family: 'SoinSansPro';
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+    src: url('../fonts/SoinSansProRoman.woff2') format('woff2'),
+         url('../fonts/SoinSansProRoman.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SoinSansPro';
+    font-weight: normal;
+    font-style: italic;
+    font-display: fallback;
+    src: url('../fonts/SoinSansProRomanItalic.woff2') format('woff2'),
+         url('../fonts/SoinSansProRomanItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SoinSansPro';
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+    src: url('../fonts/SoinSansProBold.woff2') format('woff2'),
+         url('../fonts/SoinSansProBold.woff') format('woff');
+}

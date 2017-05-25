@@ -8,10 +8,10 @@
 
 @import "components/read";
 // @import "components/buttons";
-// // @import "components/comments";
-// // @import "components/forms";
-// // @import "components/grid";
-// // @import "components/wp-classes";
+// @import "components/comments";
+// @import "components/forms";
+// @import "components/grid";
+// @import "components/wp-classes";
 // @import "layouts/header";
 // @import "layouts/sidebar";
 // @import "layouts/footer";
@@ -20,8 +20,8 @@
 // @import "layouts/tinymce";
 
 .contain {
-    max-width: 700px;
-    margin: 0 auto;
+    padding: $size-x1;
+    //margin: 0 auto;
 }
 
 a.brand,
@@ -33,6 +33,13 @@ a.brand:active {
 }
 
 .large {
-    font-size: $size-x3;
+    font-size: $size-x4;
     font-weight: bold;
+    line-height: 1.3090169943750;
+}
+
+@media (max-width: 700px) {
+	.large {
+		font-size: $size-x3;
+	}
 }

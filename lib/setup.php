@@ -46,7 +46,7 @@ function setup() {
 
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
-  add_editor_style(Assets\asset_path('styles/main.css'));
+  //add_editor_style(Assets\asset_path('styles/main.css'));
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
@@ -131,7 +131,7 @@ function remove_recent_comments_style() {
     global $wp_widget_factory;
     remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
 }
-add_action('widgets_init', __NAMESPACE__ . '\\remove_recent_comments_style');
+//add_action('widgets_init', __NAMESPACE__ . '\\remove_recent_comments_style');
 /**
  * Remove <p> from wrapping images
  */

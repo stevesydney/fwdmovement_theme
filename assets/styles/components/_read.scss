@@ -6,6 +6,11 @@
         margin-bottom: 0;
     }
 
+.read a {
+    border-bottom: 1px dotted $colour-primary;
+    color: inherit;//#D0237E;
+}
+
 .read h1,
 .read h2,
 .read h3,

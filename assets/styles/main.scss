@@ -7,20 +7,18 @@
 @import "common/global";
 
 @import "components/read";
-// @import "components/buttons";
-// @import "components/comments";
-// @import "components/forms";
-// @import "components/grid";
-// @import "components/wp-classes";
-// @import "layouts/header";
-// @import "layouts/sidebar";
-// @import "layouts/footer";
-// @import "layouts/pages";
-// @import "layouts/posts";
+
+@import "properties/large";
+@import "properties/medium";
+@import "properties/small";
+
+@import "properties/inflate";
+@import "properties/boost";
 // @import "layouts/tinymce";
 
+
 .contain {
-    padding: $size-x1;
+    padding: 0 $size-x1;
     //margin: 0 auto;
 }
 
@@ -30,16 +28,5 @@ a.brand:visited,
 a.brand:hover,
 a.brand:active {
     color: $colour-primary;
-}
-
-.large {
-    font-size: $size-x4;
-    font-weight: bold;
-    line-height: 1.3090169943750;
-}
-
-@media (max-width: 700px) {
-	.large {
-		font-size: $size-x3;
-	}
+    display: block;
 }

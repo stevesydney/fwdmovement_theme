@@ -1,0 +1,7 @@
+.boost {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+    .boost > :nth-child(1n+1) {
+        margin-bottom: 0;
+    }

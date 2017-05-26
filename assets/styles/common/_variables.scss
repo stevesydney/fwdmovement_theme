@@ -1,44 +1,59 @@
 $flex: false;
 
+// Colour palette http://paletton.com/#uid=3020u0kqBw0guIwlIAwvqs6xSlV
+
 $font-family-base: "SoinSansPro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-read: "Helvetica", "Menlo", "Andale Mono", "Lucida Console", monospace;
 $size-base: 22px;
 
+$value-x0: 0.8;
+$value-x1: 1;
+$value-x1_5: 1.3090169943750;
+$value-x2: 1.6180339887499;
+$value-x3: 2.61803398874991;
+$value-x4: 4.23606797749983;
+$value-x5: 6.85410196624977;
+$value-x6: 11.09016994374965;
+$value-x7: 17.9442719099995;
+$value-x8: 29.03444185374928;
+$value-x9: 46.97871376374899;
+$value-x10: 76.01315561749861;
+
 $size-micro: 0.3819660112501rem;
 $size-small: 0.61803398874989rem;
-$size-medium: 1.3090169943750rem;
-$size-x0: 0.8rem;
-$size-x1: 1rem;
-$size-x2: 1.6180339887499rem;
-$size-x3: 2.61803398874991rem;
-$size-x4: 4.23606797749983rem;
-$size-x5: 6.85410196624977rem;
-$size-x6: 11.09016994374965rem;
-$size-x7: 17.9442719099995rem;
-$size-x8: 29.03444185374928rem;
-$size-x9: 46.97871376374899rem;
-$size-x10: 76.01315561749861rem;
+$size-medium: #{$value-x1_5}rem;
+$size-x0: #{$value-x0}rem;
+$size-x1: #{$value-x1}rem;
+$size-x2: #{$value-x2}rem;
+$size-x3: #{$value-x3}rem;
+$size-x4: #{$value-x4}rem;
+$size-x5: #{$value-x5}rem;
+$size-x6: #{$value-x6}rem;
+$size-x7: #{$value-x7}rem;
+$size-x8: #{$value-x8}rem;
+$size-x9: #{$value-x9}rem;
+$size-x10: #{$value-x10}rem;
 
 $size-micro-em: 0.3819660112501em;
 $size-small-em: 0.61803398874989em;
-$size-medium-em: 1.3090169943750em;
-$size-x0-em: 0.8em;
-$size-x1-em: 1em;
-$size-x2-em: 1.6180339887499em;
-$size-x3-em: 2.61803398874991em;
-$size-x4-em: 4.23606797749983em;
-$size-x5-em: 6.85410196624977em;
-$size-x6-em: 11.09016994374965em;
-$size-x7-em: 17.9442719099995em;
-$size-x8-em: 29.03444185374928em;
-$size-x9-em: 46.97871376374899em;
-$size-x10-em: 76.01315561749861em;
+$size-medium-em: #{$value-x1_5}em;
+$size-x0-em: #{$value-x0}em;
+$size-x1-em: #{$value-x1}em;
+$size-x2-em: #{$value-x2}em;
+$size-x3-em: #{$value-x3}em;
+$size-x4-em: #{$value-x4}em;
+$size-x5-em: #{$value-x5}em;
+$size-x6-em: #{$value-x6}em;
+$size-x7-em: #{$value-x7}em;
+$size-x8-em: #{$value-x8}em;
+$size-x9-em: #{$value-x9}em;
+$size-x10-em: #{$value-x10}em;
 
 $size-x1-half: 0.5rem;
 
 $border-width: 1px;
 
-$colour-bg: #fff;
+$colour-bg: #eee;
 $colour-bg-filter: rgba(255,255,255,0.5);
 $colour-black: #444;
 $colour-primary: #FF352B;
@@ -46,7 +61,7 @@ $colour-primary-subtle: #aaa;//rgb(128,128,128);
 $colour-primary-inverse: #FFF;
 $colour-negative: #CC3639;
 $colour-negative-subtle: lighten($colour-negative, 40%);
-$colour-positive: #70C925;
+$colour-positive: #21C635;
 $colour-positive-subtle: lighten($colour-positive, 50%);
 $colour-base: $colour-black;//#000;
 $colour-base-subtle: $colour-primary-subtle;//rgb(128,128,128);//lighten($colour-base, 50%);

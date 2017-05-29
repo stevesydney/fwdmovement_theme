@@ -7,6 +7,7 @@
 
     color: $colour-black;
     background-color: $colour-bg;
+    background-image: repeating-linear-gradient(180deg, transparent, transparent calc(#{$size-x1} - 1px), $grid-colour calc(#{$size-x1} - 1px), $grid-colour $size-x1), repeating-linear-gradient(90deg, transparent, transparent calc(#{$size-x1} - 1px), $grid-colour calc(#{$size-x1} - 1px), $grid-colour $size-x1);
 
     box-sizing: border-box;
 }

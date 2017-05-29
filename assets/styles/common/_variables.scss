@@ -7,17 +7,17 @@ $font-family-read: "Helvetica", "Menlo", "Andale Mono", "Lucida Console", monosp
 $size-base: 22px;
 
 $value-x0: 0.8;
-$value-x1: 1;
+$value-x1: 1.6180339887499;//1;
 $value-x1_5: 1.3090169943750;
-$value-x2: 1.6180339887499;
-$value-x3: 2.61803398874991;
-$value-x4: 4.23606797749983;
-$value-x5: 6.85410196624977;
-$value-x6: 11.09016994374965;
-$value-x7: 17.9442719099995;
-$value-x8: 29.03444185374928;
-$value-x9: 46.97871376374899;
-$value-x10: 76.01315561749861;
+$value-x2: 2.61803398874991;//2;//1.6180339887499;
+$value-x3: 4.23606797749983;//3;//2.61803398874991;
+$value-x4: 6.85410196624977;//4;//4.23606797749983;
+$value-x5: 11.09016994374965;//5;//6.85410196624977;
+$value-x6: 17.9442719099995;//6;//11.09016994374965;
+$value-x7: 29.03444185374928;//7;//17.9442719099995;
+$value-x8: 46.97871376374899;//8;//29.03444185374928;
+$value-x9: 76.01315561749861;//9;//46.97871376374899;
+$value-x10: 122.991869381;//10;//76.01315561749861;
 
 $size-micro: 0.3819660112501rem;
 $size-small: 0.61803398874989rem;
@@ -66,6 +66,8 @@ $colour-positive-subtle: lighten($colour-positive, 50%);
 $colour-base: $colour-black;//#000;
 $colour-base-subtle: $colour-primary-subtle;//rgb(128,128,128);//lighten($colour-base, 50%);
 $colour-base-inverse: #FFF;//lighten($colour-base, 80%);
+
+$grid-colour: #ddd;
 
 $line-height: 1.6180339887499;
 

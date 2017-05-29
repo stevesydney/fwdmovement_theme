@@ -1,8 +1,8 @@
 .inflate {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: $size-x1;
+    padding-bottom: $size-x1;
+    padding-left: $size-x1;
+    padding-right: $size-x1;
 }
     .inflate > :nth-child(1n+1) {
         margin-bottom: 0;

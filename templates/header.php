@@ -2,6 +2,18 @@
     <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
         <?php bloginfo('name'); ?>
     </a>
+    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
+        <?php bloginfo('name'); ?>
+    </a>
+    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
+        <?php bloginfo('name'); ?>
+    </a>
+    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
+        <?php bloginfo('name'); ?>
+    </a>
+    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
+        <?php bloginfo('name'); ?>
+    </a>
     <nav>
         <?php
             if (has_nav_menu('primary_navigation')) :

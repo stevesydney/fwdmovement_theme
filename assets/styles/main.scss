@@ -1,6 +1,9 @@
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 // endbower
+
+$debug: false;//true;
+
 @import "common/fonts";
 @import "common/variables";
 @import "common/reset";
@@ -13,15 +16,8 @@
 @import "properties/small";
 
 @import "properties/inflate";
-@import "properties/boost";
+@import "properties/buffer";
 // @import "layouts/tinymce";
-
-
-.contain {
-    padding: 0 $size-x1;
-    position: relative;
-    //margin: 0 auto;
-}
 
 a.brand,
 a.brand:link,

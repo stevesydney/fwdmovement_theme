@@ -1,17 +1,5 @@
 <header role="banner">
-    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
-        <?php bloginfo('name'); ?>
-    </a>
-    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
-        <?php bloginfo('name'); ?>
-    </a>
-    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
-        <?php bloginfo('name'); ?>
-    </a>
-    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
-        <?php bloginfo('name'); ?>
-    </a>
-    <a class="brand boost" href="<?= esc_url(home_url('/')); ?>" title="Home">
+    <a class="brand buffer" href="<?= esc_url(home_url('/')); ?>" title="Home">
         <?php bloginfo('name'); ?>
     </a>
     <nav>

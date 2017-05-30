@@ -9,7 +9,7 @@
 
     <body <?php body_class(); ?>>
 
-        <div class="contain">
+        <div class="inflate">
 
         <?php
             do_action('get_header');

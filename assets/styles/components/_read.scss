@@ -1,9 +1,14 @@
 .read {
-    max-width: 700px;
+    max-width: $size-x8;
 }
 
     .read > :last-child {
         margin-bottom: 0;
+        @if $debug {
+            &:after {
+                background-color: transparent;
+            }
+        }
     }
 
 .read a {
@@ -20,6 +25,18 @@
 .read dd,
 .read blockquote {
     margin-bottom: $size-x1;
+    @if $debug {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: $size-x1;
+            width: 100%;
+            background-color: rgba(0,255,255,0.2);
+        }
+    }
 }
 
 .read li :last-child,

@@ -3,7 +3,26 @@
     padding-bottom: $size-x1;
     padding-left: $size-x1;
     padding-right: $size-x1;
+    @if $debug {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-style: solid;
+            border-width: $size-x1;
+            border-color: rgba(255,0,0,0.2);
+        }
+    }
 }
     .inflate > :nth-child(1n+1) {
         margin-bottom: 0;
+        @if $debug {
+            &:after {
+                background-color: transparent;
+            }
+        }
     }

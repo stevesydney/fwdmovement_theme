@@ -1,0 +1,24 @@
+.buffer {
+    margin-bottom: $size-x1;
+    @if $debug {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: $size-x1;
+            width: 100%;
+            background-color: rgba(0,255,255,0.2);
+        }
+    }
+}
+    .buffer > :nth-child(1n+1) {
+        margin-bottom: 0;
+        @if $debug {
+            &:after {
+                background-color: transparent;
+            }
+        }
+    }
+

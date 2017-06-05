@@ -1,9 +1,16 @@
 .inflate {
-    padding-top: $size-x1;
-    padding-bottom: $size-x1;
-    padding-left: $size-x1;
-    padding-right: $size-x1;
-    @if $debug {
+    padding-top: $size-x0;
+    padding-bottom: $size-x0;
+    padding-left: $size-x0;
+    padding-right: $size-x0;
+
+}
+    .inflate > :nth-child(1n+1) {
+        margin-bottom: 0;
+    }
+
+@if $debug {
+    .inflate {
         position: relative;
         &:before {
             content: "";
@@ -13,16 +20,11 @@
             bottom: 0;
             right: 0;
             border-style: solid;
-            border-width: $size-x1;
-            border-color: rgba(255,0,0,0.2);
+            border-width: $size-x0;
+            border-color: $padding-colour;
+        }
+        & > :nth-child(1n+1):after {
+            background-color: transparent;
         }
     }
 }
-    .inflate > :nth-child(1n+1) {
-        margin-bottom: 0;
-        @if $debug {
-            &:after {
-                background-color: transparent;
-            }
-        }
-    }

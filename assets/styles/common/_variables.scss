@@ -4,24 +4,20 @@ $flex: false;
 
 $font-family-base: "SoinSansPro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-read: "Helvetica", "Menlo", "Andale Mono", "Lucida Console", monospace;
-$size-base: 22px;
+$size-base: 12px;
 
-$value-x0: 0.8;
-$value-x1: 1;//1.6180339887499;//1;
-$value-x1_5: 1.3090169943750;
-$value-x2: 2;//2.61803398874991;//2;//1.6180339887499;
-$value-x3: 3;//4.23606797749983;//3;//2.61803398874991;
-$value-x4: 5;//6.85410196624977;//4;//4.23606797749983;
-$value-x5: 8;//11.09016994374965;//5;//6.85410196624977;
-$value-x6: 13;//17.9442719099995;//6;//11.09016994374965;
-$value-x7: 21 ;//29.03444185374928;//7;//17.9442719099995;
-$value-x8: 34;//46.97871376374899;//8;//29.03444185374928;
-$value-x9: 55;//76.01315561749861;//9;//46.97871376374899;
-$value-x10: 89;//122.991869381;//10;//76.01315561749861;
+$value-x0: 1;
+$value-x1: 2;//1;//1.6180339887499;//1;
+$value-x2: 3;//2;//2.61803398874991;//2;//1.6180339887499;
+$value-x3: 5;//3;//4.23606797749983;//3;//2.61803398874991;
+$value-x4: 8;//5;//6.85410196624977;//4;//4.23606797749983;
+$value-x5: 13;//8;//11.09016994374965;//5;//6.85410196624977;
+$value-x6: 21;//13;//17.9442719099995;//6;//11.09016994374965;
+$value-x7: 34;//21 ;//29.03444185374928;//7;//17.9442719099995;
+$value-x8: 55;//34;//46.97871376374899;//8;//29.03444185374928;
+$value-x9: 89;//55;//76.01315561749861;//9;//46.97871376374899;
+$value-x10: 144;//89;//122.991869381;//10;//76.01315561749861;
 
-$size-micro: 0.3819660112501rem;
-$size-small: 0.61803398874989rem;
-$size-medium: #{$value-x1_5}rem;
 $size-x0: #{$value-x0}rem;
 $size-x1: #{$value-x1}rem;
 $size-x2: #{$value-x2}rem;
@@ -34,9 +30,6 @@ $size-x8: #{$value-x8}rem;
 $size-x9: #{$value-x9}rem;
 $size-x10: #{$value-x10}rem;
 
-$size-micro-em: 0.3819660112501em;
-$size-small-em: 0.61803398874989em;
-$size-medium-em: #{$value-x1_5}em;
 $size-x0-em: #{$value-x0}em;
 $size-x1-em: #{$value-x1}em;
 $size-x2-em: #{$value-x2}em;
@@ -48,8 +41,6 @@ $size-x7-em: #{$value-x7}em;
 $size-x8-em: #{$value-x8}em;
 $size-x9-em: #{$value-x9}em;
 $size-x10-em: #{$value-x10}em;
-
-$size-x1-half: 0.5rem;
 
 $border-width: 1px;
 
@@ -67,9 +58,11 @@ $colour-base: $colour-black;//#000;
 $colour-base-subtle: $colour-primary-subtle;//rgb(128,128,128);//lighten($colour-base, 50%);
 $colour-base-inverse: #FFF;//lighten($colour-base, 80%);
 
-$grid-colour: rgba(0,0,0,0.05);//#dedede;
+$grid-colour: rgba(0,0,0,0.02);//#dedede;
+$padding-colour: rgba(255,0,0,0.1);
+$margin-colour: rgba(0,255,255,0.1);
 
-$line-height: $value-x1;
+$line-height: $value-x0;
 
 $focus-ring: $colour-base-subtle solid calc(#{$border-width} + 1px);
 $active-ring: $colour-base solid calc(#{$border-width} + 1px);

@@ -2,7 +2,7 @@
 // bower:scss
 // endbower
 
-$debug: false;//true;
+$debug: true;//true;
 
 @import "common/fonts";
 @import "common/variables";
@@ -17,7 +17,6 @@ $debug: false;//true;
 
 @import "properties/inflate";
 @import "properties/buffer";
-// @import "layouts/tinymce";
 
 a.brand,
 a.brand:link,

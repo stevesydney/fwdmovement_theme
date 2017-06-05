@@ -3,25 +3,28 @@
     font-size: $size-base;
     font-weight: normal;
     text-rendering: optimizeLegibility;
-    line-height: $value-x2;
+    line-height: $value-x1;
     color: $colour-black;
     background-color: $colour-bg;
     box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     @if $debug {
         background-image: 
         repeating-linear-gradient(
             180deg, 
             transparent, 
-            transparent $size-x1, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x1, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x2
+            transparent $size-x0, //calc(#{$size-x1} - 2px), 
+            $grid-colour $size-x0, //calc(#{$size-x1} - 2px), 
+            $grid-colour $size-x1
         ), 
         repeating-linear-gradient(
             90deg, 
             transparent, 
-            transparent $size-x1, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x1, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x2
+            transparent $size-x0, //calc(#{$size-x1} - 2px), 
+            $grid-colour $size-x0, //calc(#{$size-x1} - 2px), 
+            $grid-colour $size-x1
         );
     }
 }

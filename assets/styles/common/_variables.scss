@@ -4,45 +4,89 @@ $flex: false;
 
 $font-family-base: "SoinSansPro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-read: "Helvetica", "Menlo", "Andale Mono", "Lucida Console", monospace;
-$size-base: 12px;
 
-$value-x0: 1;
-$value-x1: 2;//1;//1.6180339887499;//1;
-$value-x2: 3;//2;//2.61803398874991;//2;//1.6180339887499;
-$value-x3: 5;//3;//4.23606797749983;//3;//2.61803398874991;
-$value-x4: 8;//5;//6.85410196624977;//4;//4.23606797749983;
-$value-x5: 13;//8;//11.09016994374965;//5;//6.85410196624977;
-$value-x6: 21;//13;//17.9442719099995;//6;//11.09016994374965;
-$value-x7: 34;//21 ;//29.03444185374928;//7;//17.9442719099995;
-$value-x8: 55;//34;//46.97871376374899;//8;//29.03444185374928;
-$value-x9: 89;//55;//76.01315561749861;//9;//46.97871376374899;
-$value-x10: 144;//89;//122.991869381;//10;//76.01315561749861;
+$size-base: 12px;//22px;
+$unit-base: 0.9;//0.9375;//0.9375;
 
-$size-x0: #{$value-x0}rem;
-$size-x1: #{$value-x1}rem;
-$size-x2: #{$value-x2}rem;
-$size-x3: #{$value-x3}rem;
-$size-x4: #{$value-x4}rem;
-$size-x5: #{$value-x5}rem;
-$size-x6: #{$value-x6}rem;
-$size-x7: #{$value-x7}rem;
-$size-x8: #{$value-x8}rem;
-$size-x9: #{$value-x9}rem;
-$size-x10: #{$value-x10}rem;
+$unit-0: 12;
+$unit-1: 24;
+$unit-2: 36;
+$unit-3: 60;
+$unit-4: 96;
+$unit-5: 156;
+$unit-6: 252;
+$unit-7: 408;
+$unit-8: 660;
+$unit-9: 1068;
 
-$size-x0-em: #{$value-x0}em;
-$size-x1-em: #{$value-x1}em;
-$size-x2-em: #{$value-x2}em;
-$size-x3-em: #{$value-x3}em;
-$size-x4-em: #{$value-x4}em;
-$size-x5-em: #{$value-x5}em;
-$size-x6-em: #{$value-x6}em;
-$size-x7-em: #{$value-x7}em;
-$size-x8-em: #{$value-x8}em;
-$size-x9-em: #{$value-x9}em;
-$size-x10-em: #{$value-x10}em;
+$multiplier-0: 2;
+$multiplier-1: 1.5;
+$multiplier-2: 1.666666667;
+$multiplier-3: 1.6;
+$multiplier-4: 1.625;
+$multiplier-5: 1.615384615;
+$multiplier-6: 1.619047619;
+$multiplier-7: 1.615384615;
+$multiplier-8: 1.619047619;
+$multiplier-9: 1.619047619;
 
-$border-width: 1px;
+
+
+$unit-x0: $unit-base;
+$unit-x1: $unit-x0 * 2;
+$unit-x2: $unit-x1 * 2;
+$unit-x3: $unit-x2 * 2;
+
+$rem-x0: #{$unit-x0}rem;
+$rem-x1: #{$unit-x1}rem;
+$rem-x2: #{$unit-x2}rem;
+$rem-x3: #{$unit-x3}rem;
+
+$font-x0: 1rem;
+$font-x1: 1.5rem;
+$font-x2: 2rem;
+$font-x3: 2.5rem;
+
+// $em-x1: #{$unit-x1}em;
+// $em-x2: #{$unit-x2}em;
+// $em-x3: #{$unit-x3}em;
+// $value-x0:      1.8;//0.9090909091;
+// $value-x1:      $value-x0 * 2;
+// $value-x2:      $value-x1 * 2;
+// $value-x3:      $value-x2 * 2;
+// $value-x4:      $value-x3 * 2;
+// $value-x5:      $value-x4 * 2;
+// $value-x6:      $value-x5 * 2;
+// $value-x7:      $value-x6 * 2;
+// $value-x8:      $value-x7 * 2;
+// $value-x9:      $value-x8 * 2;
+// $value-x10:     $value-x9 * 2;
+
+// $size-x0:       #{$value-x0}rem;
+// $size-x1:       #{$value-x1}rem;
+// $size-x2:       #{$value-x2}rem;
+// $size-x3:       #{$value-x3}rem;
+// $size-x4:       #{$value-x4}rem;
+// $size-x5:       #{$value-x5}rem;
+// $size-x6:       #{$value-x6}rem;
+// $size-x7:       #{$value-x7}rem;
+// $size-x8:       #{$value-x8}rem;
+// $size-x9:       #{$value-x9}rem;
+// $size-x10:      #{$value-x10}rem;
+
+// $size-x0-em:    #{$value-x0}em;
+// $size-x1-em:    #{$value-x1}em;
+// $size-x2-em:    #{$value-x2}em;
+// $size-x3-em:    #{$value-x3}em;
+// $size-x4-em:    #{$value-x4}em;
+// $size-x5-em:    #{$value-x5}em;
+// $size-x6-em:    #{$value-x6}em;
+// $size-x7-em:    #{$value-x7}em;
+// $size-x8-em:    #{$value-x8}em;
+// $size-x9-em:    #{$value-x9}em;
+// $size-x10-em:   #{$value-x10}em;
+
+$border-width:  1px;
 
 $colour-bg: #eee;
 $colour-bg-filter: rgba(255,255,255,0.5);
@@ -58,11 +102,10 @@ $colour-base: $colour-black;//#000;
 $colour-base-subtle: $colour-primary-subtle;//rgb(128,128,128);//lighten($colour-base, 50%);
 $colour-base-inverse: #FFF;//lighten($colour-base, 80%);
 
-$grid-colour: rgba(0,0,0,0.02);//#dedede;
+$grid-colour: rgba(0,0,0,0.05);//0.05);//#dedede;
+$canvas-colour: rgba(255,0,0,0.05);
 $padding-colour: rgba(255,0,0,0.1);
 $margin-colour: rgba(0,255,255,0.1);
-
-$line-height: $value-x0;
 
 $focus-ring: $colour-base-subtle solid calc(#{$border-width} + 1px);
 $active-ring: $colour-base solid calc(#{$border-width} + 1px);

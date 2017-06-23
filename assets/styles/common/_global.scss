@@ -3,28 +3,22 @@
     font-size: $size-base;
     font-weight: normal;
     text-rendering: optimizeLegibility;
-    line-height: $value-x1;
+    line-height: $unit-x1;
     color: $colour-black;
     background-color: $colour-bg;
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    @if $debug {
-        background-image: 
-        repeating-linear-gradient(
-            180deg, 
-            transparent, 
-            transparent $size-x0, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x0, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x1
-        ), 
-        repeating-linear-gradient(
-            90deg, 
-            transparent, 
-            transparent $size-x0, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x0, //calc(#{$size-x1} - 2px), 
-            $grid-colour $size-x1
-        );
-    }
+}
+body {
+    font-size: $font-x1;
+    // margin-top: 5.555555555vh;
+    // margin-left: 5.555555555vw;
+    // margin-right: 11.11111111vw;
+    // margin-bottom: 11.11111111vh;
+    margin-top: 11.11111111vh;
+    margin-left: 11.11111111vw;
+    margin-right: 22.22222222vw;
+    margin-bottom: 22.22222222vh;
 }

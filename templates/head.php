@@ -10,5 +10,4 @@
         for(var i=0;i<arr.length;i++) document.createElement(arr[i]);
     </script>
     <![endif]-->
-    <script>if(document.documentElement){document.documentElement.className='js';}</script>
 </head>

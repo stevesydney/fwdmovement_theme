@@ -1,5 +1,5 @@
 .read {
-    max-width: $size-x8;
+    //max-width: $size-x8;
 }
 
     .read > :last-child {
@@ -24,7 +24,7 @@
 .read hr,
 .read dd,
 .read blockquote {
-    margin-bottom: $size-x0;
+    margin-bottom: $rem-x0;
     @if $debug {
         position: relative;
         &:after {
@@ -32,7 +32,7 @@
             position: absolute;
             top: 100%;
             left: 0;
-            height: $size-x0;
+            height: $rem-x0;
             width: 100%;
             background-color: rgba(0,255,255,0.2);
         }
@@ -46,18 +46,18 @@
 }
 
 .read h1 {
-    font-size: $size-x0;
+    //font-size: $size-x0;
     font-weight: bold;
     word-break: break-all;
 }
 
 .read h2 {
-    font-size: $size-x0;
+    //font-size: $size-x0;
     font-weight: bold;
 }
 
 .read h3 {
-    font-size: $size-x0;
+    //font-size: $size-x0;
     font-weight: bold;
 }
 
@@ -70,16 +70,16 @@
 .read h1 + h3,
 .read h2 + h3,
 .read h3 + h3 {
-    margin-top: -$size-x0;
+    margin-top: -$rem-x0;
 }
 
 .read dl {
-    margin-left: $size-x2-em;
+    margin-left: $rem-x0;
 }
 
     .read dd dl {
-        margin-left: $size-x1-em;
-        padding-top: $size-x1;
+        margin-left: $rem-x0;
+        padding-top: $rem-x0;
     }
 
 .read dt {
@@ -88,7 +88,7 @@
 
 .read ul,
 .read ol {
-    margin-left: $size-x1;
+    margin-left: $rem-x0;
 }
 
 .read ol {
@@ -107,12 +107,12 @@
     .read ul > li > ol,
     .read ol > li > ul,
     .read ol > li > ol > li > ol {
-        margin-left: $size-x1;
+        margin-left: $rem-x0;
     }
 
     .read li ol,
     .read li ul {
-        padding-top: $size-x1;
+        padding-top: $rem-x0;
     }
 
 .read li {
@@ -124,7 +124,7 @@
         font-size: inherit;
         position: absolute;
         right: 100%;
-        padding-right: $size-x0;
+        padding-right: $rem-x0;
         text-align: right;
         font-weight: bold;
         color: $colour-base-subtle;
@@ -136,7 +136,7 @@
 
     .read ul > li > ul > li:before {
         content: '\203A';
-        width: $size-x1;
+        width: $rem-x0;
         padding-right: 0;
         text-align: left;
     }
@@ -156,18 +156,18 @@
         position: static;
         display: block;
         text-align: left;
-        font-size: $size-x0;
+        //font-size: $size-x0;
     }
 
 .read blockquote {
     font-weight: bold;
-    margin-left: $size-x1;
-    margin-right: $size-x1;
+    margin-left: $rem-x0;
+    margin-right: $rem-x0;
 }
 
     .read blockquote footer {
         font-weight: normal;
-        font-size: $size-x0;
+        //font-size: $size-x0;
     }
 
     .read blockquote footer:before {
@@ -175,7 +175,7 @@
     }
 
     .read blockquote p + footer {
-        margin-top: -$size-x1;
+        margin-top: -$rem-x0;
     }
 
 .read img {

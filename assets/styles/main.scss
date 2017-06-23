@@ -2,21 +2,22 @@
 // bower:scss
 // endbower
 
-$debug: true;//true;
+$debug: false;//true;//true;
 
 @import "common/fonts";
 @import "common/variables";
 @import "common/reset";
 @import "common/global";
 
-@import "components/read";
+@import "components/grid";
+// @import "components/read";
 
-@import "properties/large";
-@import "properties/medium";
-@import "properties/small";
+// @import "properties/large";
+//@import "properties/medium";
+// @import "properties/small";
 
-@import "properties/inflate";
-@import "properties/buffer";
+// @import "properties/inflate";
+// @import "properties/buffer";
 
 a.brand,
 a.brand:link,
